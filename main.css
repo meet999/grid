@@ -1,0 +1,43 @@
+.header {grid-area: header;}
+.menu {grid-area: list;}
+.content {grid-area: main;}
+.footer {grid-area: footer;}
+
+.grid-container > div {
+    background: yellow;
+    padding: 1em;
+}
+
+body {
+    text-align: center;
+}
+.grid-container > div:nth-child(odd) {
+    background: grey;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'list list main main main main'
+    'footer footer footer footer footer footer';
+    grid-gap: 10px;
+
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+a:link {
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content {
+    font-size: 2rem;
+}
